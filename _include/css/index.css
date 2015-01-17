@@ -1,0 +1,80 @@
+.img-container {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin-right: 100px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+
+    width: 100px;
+    height: 100px;
+
+    float: left;
+    text-align:center; /* Align center inline elements */
+    font: 0/0 a;
+}
+
+
+.img-container img {
+    vertical-align: middle;
+    display: inline-block;
+    max-height: 100%;  /* <-- Set maximum height to 100% of its parent */
+    max-width: 100%;   /* <-- Set maximum width to 100% of its parent */
+
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+    filter: alpha(opacity=80);
+    border: 1px solid black;
+}
+
+
+.img-container img:hover
+{
+    transform: scale(1.5, 1.5);
+    -ms-transform: scale(1.5, 1.5); /* IE 9 */
+    -webkit-transform: scale(1.5, 1.5);
+
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    box-shadow: 0 0 5px rgba(0,0,0,0.75);
+
+    opacity: 1;
+    filter: alpha(opacity=100);
+    border: solid 2px #607B8B;
+}
+
+
+.lastImage {
+    margin-right: 0;
+}
+
+
+hr.timeLine {
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    z-index: -1;
+
+}
+
+#timelineContainer {
+    position: absolute;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    left: 150px;
+}
+
+.timeline {
+    height: 75px;
+    width: 100%;
+    position: relative;
+}
