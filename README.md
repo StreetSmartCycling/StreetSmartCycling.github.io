@@ -6,7 +6,6 @@ Street Smart Cycling
 
 This is the splash page for the start-up business, Street Smart Cycling.
 
-
 Things yet to be done:
 1. Decide what to put in Progress Section, including what the filters on the side should be
 2. Make pics legit in the About the Team section
