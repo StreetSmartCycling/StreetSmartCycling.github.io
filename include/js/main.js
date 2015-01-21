@@ -146,10 +146,10 @@ BRUSHED.filter = function (){
 			} else {
 			  // otherwise, apply new options
 			  $container.isotope( options );
-			*/
+			
 			
 			return false;
-		});
+		}); */
 	}
 }
 
