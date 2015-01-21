@@ -24,3 +24,5 @@ Timeline:
 2. Make paragraph of text that appears on hover to describe goal
 3. Fix dumb centering if I can, right now it is hard-coded with a pixel value
 4. Make it responsive
+
+# StreetSmartCycling.github.io
