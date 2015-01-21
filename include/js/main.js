@@ -103,6 +103,8 @@ BRUSHED.nav = function(){
    Filter Works
 ================================================== */
 
+/*
+
 BRUSHED.filter = function (){
 	if($('#projects').length > 0){		
 		var $container = $('#projects');
@@ -151,6 +153,7 @@ BRUSHED.filter = function (){
 	}
 }
 
+*/
 
 /* ==================================================
    FancyBox
