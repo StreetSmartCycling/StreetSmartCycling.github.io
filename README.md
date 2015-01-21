@@ -7,7 +7,7 @@ Street Smart Cycling
 This is the splash page for the start-up business, Street Smart Cycling.
 
 
-Current: Fix issue with fancy-box where back button doesn't work!!!, Also change overlay on profile images to fit image (not div)
+Current: change overlay on profile images to fit image (not div), fix background color so you can see fields
 
 Things yet to be done:
 1. Update Progress Section
