@@ -77,10 +77,8 @@ BRUSHED.slider = function(){
 		thumb_links				:	0,			// Individual thumb links for each slide
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
-											{image : '_include/img/slider-images/image01.jpg', title : '<div class="slide-content">Brushed</div>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/image02.jpg', title : '<div class="slide-content">Brushed</div>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/image03.jpg', title : '<div class="slide-content">Brushed</div>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/image04.jpg', title : '<div class="slide-content">Brushed</div>', thumb : '', url : ''}  
+											{image : 'include/img/slider-images/bike_on_road.png', title : '<div class="slide-content">Street Smart Cycling</div>', thumb : '', url : ''},
+											{image : 'include/img/slider-images/design_cropped.jpg', title : '<div class="slide-content">Street Smart Cycling</div>', thumb : '', url : ''} 
 									],
 									
 		// Theme Options			   
@@ -105,6 +103,7 @@ BRUSHED.nav = function(){
    Filter Works
 ================================================== */
 
+
 BRUSHED.filter = function (){
 	if($('#projects').length > 0){		
 		var $container = $('#projects');
@@ -118,7 +117,7 @@ BRUSHED.filter = function (){
 			});
 		});
 	
-		
+		/*
 		// filter items when filter link is clicked
 		var $optionSets = $('#options .option-set'),
 			$optionLinks = $optionSets.find('a');
@@ -132,6 +131,7 @@ BRUSHED.filter = function (){
 			var $optionSet = $this.parents('.option-set');
 			$optionSet.find('.selected').removeClass('selected');
 			$this.addClass('selected');
+			
 	  
 			// make option object dynamically, i.e. { filter: '.my-filter-class' }
 			var options = {},
@@ -146,10 +146,10 @@ BRUSHED.filter = function (){
 			} else {
 			  // otherwise, apply new options
 			  $container.isotope( options );
-			}
+			
 			
 			return false;
-		});
+		}); */
 	}
 }
 
@@ -195,7 +195,7 @@ BRUSHED.contactForm = function(){
 		
 		$.ajax({
 			type: "POST",
-			url: "_include/php/contact.php",
+			url: "include/php/contact.php",
 			data: fields,
 			dataType: 'json',
 			success: function(response) {
@@ -222,7 +222,7 @@ BRUSHED.tweetFeed = function(){
 	var valueTop = -64; // Margin Top Value
 	
     $("#ticker").tweet({
-          modpath: '_include/js/twitter/',
+          modpath: 'include/js/twitter/',
           username: "Bluxart", // Change this with YOUR ID
           page: 1,
           avatar_size: 0,
@@ -405,17 +405,7 @@ $(document).ready(function(){
 	Modernizr.load([
 	{
 		test: Modernizr.placeholder,
-		nope: '_include/js/placeholder.js', 
-		complete : function() {
-				if (!Modernizr.placeholder) {
-						Placeholders.init({
-						live: true,
-						hideOnFocus: false,
-						className: "yourClass",
-						textColor: "#999"
-						});    
-				}
-		}
+		nope: 'include/js/placeholder.js',
 	}
 	]);
 	
