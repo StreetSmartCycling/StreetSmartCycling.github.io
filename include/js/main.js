@@ -77,10 +77,8 @@ BRUSHED.slider = function(){
 		thumb_links				:	0,			// Individual thumb links for each slide
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
-											{image : 'include/img/slider-images/image01.jpg', title : '<div class="slide-content">Brushed</div>', thumb : '', url : ''},
-											{image : 'include/img/slider-images/image02.jpg', title : '<div class="slide-content">Brushed</div>', thumb : '', url : ''},
-											{image : 'include/img/slider-images/image03.jpg', title : '<div class="slide-content">Brushed</div>', thumb : '', url : ''},
-											{image : 'include/img/slider-images/image04.jpg', title : '<div class="slide-content">Brushed</div>', thumb : '', url : ''}  
+											{image : 'include/img/slider-images/bike_on_road.png', title : '<div class="slide-content">Street Smart Cycling</div>', thumb : '', url : ''},
+											{image : 'include/img/slider-images/design_cropped.jpg', title : '<div class="slide-content">Street Smart Cycling</div>', thumb : '', url : ''} 
 									],
 									
 		// Theme Options			   
@@ -105,6 +103,7 @@ BRUSHED.nav = function(){
    Filter Works
 ================================================== */
 
+
 BRUSHED.filter = function (){
 	if($('#projects').length > 0){		
 		var $container = $('#projects');
@@ -118,7 +117,7 @@ BRUSHED.filter = function (){
 			});
 		});
 	
-		
+		/*
 		// filter items when filter link is clicked
 		var $optionSets = $('#options .option-set'),
 			$optionLinks = $optionSets.find('a');
@@ -132,6 +131,7 @@ BRUSHED.filter = function (){
 			var $optionSet = $this.parents('.option-set');
 			$optionSet.find('.selected').removeClass('selected');
 			$this.addClass('selected');
+			
 	  
 			// make option object dynamically, i.e. { filter: '.my-filter-class' }
 			var options = {},
@@ -146,10 +146,10 @@ BRUSHED.filter = function (){
 			} else {
 			  // otherwise, apply new options
 			  $container.isotope( options );
-			}
+			
 			
 			return false;
-		});
+		}); */
 	}
 }
 
@@ -405,17 +405,7 @@ $(document).ready(function(){
 	Modernizr.load([
 	{
 		test: Modernizr.placeholder,
-		nope: 'include/js/placeholder.js', 
-		complete : function() {
-				if (!Modernizr.placeholder) {
-						Placeholders.init({
-						live: true,
-						hideOnFocus: false,
-						className: "yourClass",
-						textColor: "#999"
-						});    
-				}
-		}
+		nope: 'include/js/placeholder.js',
 	}
 	]);
 	
